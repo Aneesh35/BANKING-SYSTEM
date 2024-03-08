@@ -1,67 +1,58 @@
 # Banking System
 
-This is a Java console-based banking system program that allows bank employees to perform account management operations and users to conduct transactions.
+The Banking System is a Java application that simulates basic banking operations such as account management and transactions. It allows bank employees to perform administrative tasks and users to conduct transactions on their accounts.
 
 ## Features
 
 - **Bank Employee Operations:**
-  - Open New Account
-  - Delete Account
-  - Open Existing Data
-  - Register ATM Agency
+  - Open New Account: Create a new customer account with an initial deposit.
+  - Open Existing Data: View existing customer account details.
+  - Register ATM Agency: Register the bank at an ATM agency.
+  - Delete Account: Delete an existing customer account.
 
 - **User Transaction Operations:**
-  - Do Transaction
-  - Cancel Transaction
+  - Do Transaction: Deposit funds into a customer account.
+  - Withdraw Money: Withdraw funds from a customer account.
 
-## Getting Started
+## Requirements
 
-### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- MySQL database server
+- MySQL Connector/J library
 
-- Java Development Kit (JDK) installed on your machine.
+## Setup
 
-### Installation
+1. **Database Configuration:**
+   - Create a MySQL database named `netbanking`.
+   - Run the provided SQL script (`queries.sql`) to create the necessary tables and structure.
+   - Optionally, additional SQL queries can be found in the `queries.sql` file for database operations and analytics.
 
-1. Clone the repository:
+2. **Java Application:**
+   - Clone or download the source code from the repository.
 
-    ```sh
-    git clone https://github.com/your-username/banking-system.git
-    ```
+3. **Dependencies:**
+   - Ensure that the MySQL Connector/J library is included in the project's dependencies.
 
-2. Navigate to the project directory:
+4. **Configuration:**
+   - Update the JDBC URL, username, and password in the `Banking` class according to your MySQL configuration.
 
-    ```sh
-    cd banking-system
-    ```
-
-3. Compile the Java files:
-
-    ```sh
-    javac Main.java
-    ```
-
-4. Run the compiled program:
-
-    ```sh
-    java Main
-    ```
+5. **Build and Run:**
+   - Compile the Java source files.
+   - Run the `Banking` class to start the application.
 
 ## Usage
 
-- **Bank Employee Operations:**
-  - Choose the desired operation by entering the corresponding number.
-  - Follow the prompts to complete the operation.
-  - To exit, select the 'Exit' option.
+- Upon running the application, you'll be prompted with options to choose from:
+  - Select the desired option by entering the corresponding number.
 
-- **User Transaction Operations:**
-  - Choose the desired transaction type by entering the corresponding number.
-  - Follow the prompts to complete the transaction.
-  - To exit, select the 'Exit' option.
+- For Bank Employee Operations:
+  - Follow the on-screen instructions to perform administrative tasks.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit any bug fixes, enhancements, or new features via pull requests.
+- For User Transaction Operations:
+  - Follow the on-screen instructions to conduct transactions on customer accounts.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+
+---
